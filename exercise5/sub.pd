@@ -1,0 +1,26 @@
+#N canvas 512 120 715 689 10;
+#X obj 14 53 bp~, f 10;
+#X obj 24 85 loadbang;
+#X obj 13 316 *~;
+#X obj 109 127 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 12750 1;
+#X msg 24 265 \$1 20;
+#X obj 23 286 line~;
+#X obj 15 19 r~ n;
+#X floatatom 61 8 5 0 0 0 - overtones -;
+#X obj 61 28 * \$1;
+#X floatatom 98 31 5 0 0 0 - q_factor -;
+#X obj 24 106 f \$2;
+#X obj 13 337 throw~ sum;
+#X connect 0 0 2 0;
+#X connect 1 0 10 0;
+#X connect 2 0 11 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 1;
+#X connect 6 0 0 0;
+#X connect 7 0 8 0;
+#X connect 8 0 0 1;
+#X connect 9 0 0 2;
+#X connect 10 0 3 0;
+#X coords 0 -1 1 1 35 165 1 100 100;
